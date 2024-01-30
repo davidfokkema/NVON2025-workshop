@@ -1,0 +1,814 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+      
+      
+      <link rel="icon" href="assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
+    
+    
+      
+        <title>Workshop: Focus op data-analyse met Tailor</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.50c56a3b.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#workshop-focus-op-data-analyse-met-tailor" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Workshop: Focus op data-analyse met Tailor" class="md-header__button md-logo" aria-label="Workshop: Focus op data-analyse met Tailor" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Workshop: Focus op data-analyse met Tailor
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Workshop: Focus op data-analyse met Tailor
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Workshop: Focus op data-analyse met Tailor" class="md-nav__button md-logo" aria-label="Workshop: Focus op data-analyse met Tailor" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    Workshop: Focus op data-analyse met Tailor
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Workshop: Focus op data-analyse met Tailor
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Workshop: Focus op data-analyse met Tailor
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#de-halfwaardetijd-van-radon-220-bepalen" class="md-nav__link">
+    <span class="md-ellipsis">
+      De halfwaardetijd van radon-220 bepalen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#de-beweging-van-een-slinger-meten-met-een-ultrasone-afstandssensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      De beweging van een slinger meten met een ultrasone afstandssensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#karretje-over-een-wrijvingslozebaan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Karretje over een wrijvingslozebaan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fotovoltaische-cel-zonnecel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fotovoltaïsche cel (zonnecel)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rontgenfluorescentie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Röntgenfluorescentie
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examenopdracht-2023-i-boomwhackers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examenopdracht 2023-I: Boomwhackers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examenopdracht 2023-I: Boomwhackers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#akoestische-lengte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Akoestische lengte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golflengte-bepalen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golflengte bepalen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meetonnauwkeurigheid-toevoegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meetonnauwkeurigheid toevoegen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequentie-uitzetten-tegen-de-golflengte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequentie uitzetten tegen de golflengte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bepaal-de-geluidsnelheid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bepaal de geluidsnelheid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lineariseren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lineariseren
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installatie-instructies-voor-tailor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installatie-instructies voor Tailor
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#de-halfwaardetijd-van-radon-220-bepalen" class="md-nav__link">
+    <span class="md-ellipsis">
+      De halfwaardetijd van radon-220 bepalen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#de-beweging-van-een-slinger-meten-met-een-ultrasone-afstandssensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      De beweging van een slinger meten met een ultrasone afstandssensor
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#karretje-over-een-wrijvingslozebaan" class="md-nav__link">
+    <span class="md-ellipsis">
+      Karretje over een wrijvingslozebaan
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#extra" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Extra">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fotovoltaische-cel-zonnecel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fotovoltaïsche cel (zonnecel)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#rontgenfluorescentie" class="md-nav__link">
+    <span class="md-ellipsis">
+      Röntgenfluorescentie
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#examenopdracht-2023-i-boomwhackers" class="md-nav__link">
+    <span class="md-ellipsis">
+      Examenopdracht 2023-I: Boomwhackers
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Examenopdracht 2023-I: Boomwhackers">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#akoestische-lengte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Akoestische lengte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#golflengte-bepalen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Golflengte bepalen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meetonnauwkeurigheid-toevoegen" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meetonnauwkeurigheid toevoegen
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#frequentie-uitzetten-tegen-de-golflengte" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frequentie uitzetten tegen de golflengte
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bepaal-de-geluidsnelheid" class="md-nav__link">
+    <span class="md-ellipsis">
+      Bepaal de geluidsnelheid
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lineariseren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Lineariseren
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installatie-instructies-voor-tailor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installatie-instructies voor Tailor
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="workshop-focus-op-data-analyse-met-tailor">Workshop: Focus op data-analyse met Tailor</h1>
+<p>Op deze webpagina vind je verschillende opdrachten om metingen te vergelijken met modellen. Hierbij komen verschillende mogelijkheden van Tailor voorbij waarbij we zoveel mogelijk hebben geprobeerd om aan te sluiten bij de onderwijspraktijk van natuurkundepractica. We hebben Tailor overigens ook gebruikt tijdens het begeleiden van profielwerkstukken &mdash; meest recent drie leerlingen die op de VU verschillende metingen gedaan hebben met een Michelsoninterferometer. Tailor kan eenvoudig worden ingezet vanaf het begin van de studie.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Als je <em>Tailor</em> nog niet hebt geïnstalleerd volg dan <a href="#installatie-instructies-voor-tailor">deze instructies</a>.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Berekeningen doen met Tailor</p>
+<p>Eén van de belangrijkste mogelijkheden van Tailor is het werken met <em>calculated columns</em>. Het idee is eenvoudig: één wiskundige vergelijking berekent de waardes van de hele kolom. Je kunt de namen van andere kolommen gebruiken als variabelen in je functie. Als je bijvoorbeeld twee kolommen met de grootheden <em>tijd</em> $t$ en <em>snelheid</em> $v$ hebt dan kun je een nieuwe kolom <em>afstand</em> $s$ definiëren met de functie:
+$$
+s = vt.
+$$
+De notatie die in Tailor gebruikt wordt is dezelfde als in Python. Je zult de vergelijking $vt$ in moeten vullen als: <code>v * t</code> en machten als $x^2$ als: <code>x ** 2</code>. Let op: alle kolommen worden van links naar rechts doorgerekend. Je kunt dus alleen variabelen gebruiken van kolommen die <em>eerder</em>, dus <em>links</em>, van je huidige kolom staan. Maar maak je geen zorgen: je kunt de volgorde van kolommen eenvoudig wijzigen door de kolomkoppen naar links of rechts te slepen.</p>
+<p>Dezelfde notatie gebruik je voor het invoeren van de modelfunctie.</p>
+</div>
+<h2 id="de-halfwaardetijd-van-radon-220-bepalen">De halfwaardetijd van radon-220 bepalen</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Leerdoel</p>
+<p>Echte metingen zijn vaak minder <em>mooi</em> dan het verhaal in het boek.</p>
+</div>
+<p>Radioactief verval wordt behandeld in het havo/vwo natuurkundeprogramma. Studenten weten dat het verval exponentieel verloopt en welke vergelijking daarbij hoort. Maar als je zelf metingen gaat doen heb je al snel last van experimentele problemen: startmoment van de meting, verzadiging van de detector, (constante?) achtergrondstraling, een bron die niet uit één zuivere isotoop bestaat... hoe ga je daarmee om? Met Tailor is het heel eenvoudig om het fitdomein aan te passen of elementen aan je model toe te voegen.</p>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht</p>
+<p>Bepaal de halfwaardetijd van radon-220. Maak daarbij gebruik van de gemeten activiteit van een pas verkregen monster van radon.</p>
+<p>Bestanden:</p>
+<ul>
+<li><a href="data/radon220.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> radon220.csv</a></li>
+</ul>
+</div>
+<h2 id="de-beweging-van-een-slinger-meten-met-een-ultrasone-afstandssensor">De beweging van een slinger meten met een ultrasone afstandssensor</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Leerdoel</p>
+<p>Een afstandsdetector is een mooi hulpmiddel tijdens een praktische opdracht. Periodieke functies zijn echter vaak lastig te fitten <em>en</em> studenten hebben vaak moeite met wat de verschillende parameters in het model betekenen. Visualiseren en uitproberen helpt daarbij!</p>
+</div>
+<p>Voor periodieke functies kan het lastig zijn om de beginwaardes van parameters als de frequentie of de amplitude zodanig te kiezen dat het model goed fit aan de datapunten. Met veel programma's is dit een kwestie van blijven proberen tot het lukt. Daarbij helpt het om goed naar de metingen te kijken en door bijvoorbeeld toppen te tellen en af te lezen de frequentie te schatten. Tailor kan een initiële fit laten zien in een lichtblauwe kleur. Wanneer beginwaardes worden veranderd past de curve zich automatisch aan. Je kunt daarvoor een nieuwe waarde intypen in het tekstveld, de pijltjes naast het veld gebruiken om hogere of lagere waardes te kiezen, of door met de muiscursor in het tekstveld te scrollen. Vooral die laatste manier is heel intuïtief en laat prachtig zien wat de invloed van de verschillende parameters is op het fysisch model.</p>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht</p>
+<p>Importeer het <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span><code>pendulum-USD.csv</code>-bestand in een leeg project. Verander de kolomnamen als je dat fijn vindt. Maak een afstand-tijd-grafiek en fit aan een geschikt model, bijvoorbeeld:
+$$
+s = s_0 + A \sin(2\pi f t + \phi),
+$$
+waar afstand $s$ en tijd $t$ gelijk moeten zijn aan de namen van de datakolommen. Probeer te fitten met de standaardwaardes van het model; dat geeft waarschijnlijk geen goed resultaat. Speel nu een beetje met de waardes; het kan zijn dat je <code>Show initial fit</code> weer even aan moet vinken. Hoe verandert het model als je een parameter aanpast? Probeer een goede fit te krijgen.</p>
+<p>Bestanden:</p>
+<ul>
+<li><a href="data/pendulum-USD.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> pendulum-USD.csv</a></li>
+</ul>
+</div>
+<h2 id="karretje-over-een-wrijvingslozebaan">Karretje over een wrijvingslozebaan</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Leerdoel</p>
+<p>De wrijvingsloze baan &mdash; of <em>luchtkussenbaan</em> &mdash; is welbekend, maar hoe ga je om met een beweging die <em>niet</em> bij $t = 0$ start? Als je meer dan één dataset moet analyseren kan het handig zijn om niet alles steeds opnieuw te doen.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Eventueel: meerdere datasets analyseren</p>
+<p>In de praktijk wordt vaak een meting uitgevoerd en de data volledig geanalyseerd, waarna dezelfde analyse wordt toegepast op een tweede dataset. Omdat Tailor de 'calculated columns' en plots herlaad wanneer de data verandert, kunnen we deze handelingen snel in Tailor uitvoeren. Doe dit door het project onder een nieuwe naam op te slaan &mdash; door bijvoorbeeld <code>-dataset-2</code> aan de naam toe te voegen &mdash; en vervolgens de data van de oude meting te vervangen door de nieuwe dataset. Wanneer het data betreft van een computer gestuurde meeting is dit helemaal eenvoudig door het nieuwe CSV-bestand te importeren. Tailor zal in dat geval de kolommen met dezelfde naam overschrijven. Klik dan op <code>(Re)Fit model</code> in de plot en de resultaten voor de nieuwe meting zijn bekend. </p>
+<p>Bij het importeren van data vanuit een CSV-bestand kan het voorkomen dat de kolomnamen niet handig dan wel logisch zijn. Het lijkt eenvoudig om dan de kolomnamen aan te passen, maar dit geeft problemen wanneer een nieuwe dataset wordt geïmporteerd in het oude project. Tailor zal de oude data niet overschrijven omdat de kolomnamen in de datasheet niet overeenkomen met de kolomnamen in het CSV-bestand. In plaats daarvan zal Tailor de nieuwe datakolommen toevoegen <em>voor</em> de andere datakolommen. Met als gevolg dat er twee datasets in het project staan en de analyse niet automatisch wordt uitgevoerd op de nieuwe data. Daarom is het handig om de kolomnamen niet aan te passen maar om een nieuwe <code>calculated column</code> toe te voegen met de nieuwe naam en een verwijzing naar de originele naam als formule. De data wordt daarmee gekopieerd naar de nieuwe kolom en de nieuwe naam kan gebruikt worden in de plots en model functies.<sup id="fnref:copied-columns"><a class="footnote-ref" href="#fn:copied-columns">1</a></sup></p>
+</div>
+<p>Bij het uitvoeren van een computer gestuurde meting is het vaak lastig om het experiment precies op hetzelfde moment te laten starten en eindigen. Met als gevolg de fit uitgevoerd moet worden op slechts een gedeelte van de data. In de plot tab kan je daarvoor <code>Use domain</code> selecteren en daarbij het domein aangeven of door de randen van de blauwe vlak te slepen om de data te selecteren. Ook zul je in het model een aanpassing moeten doen zodat de meting niet op $t = 0$ hoeft te beginnen.</p>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht</p>
+<p>Importeer het <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span><code>cart-dataset1.csv</code>-bestand en voeg eventueel nieuwe kolommen toe om afkortingen te definiëren voor de tijd en positie kolommen. Geef de nieuwe kolommen als naam $t$ and $s$. Voeg een kolom toe met 0.005 als meetonnauwkeurigheid voor $\delta s$. Plot $s$ tegen $t$ en fit een model voor constante snelheid aan het rechte deel van de data. Sla het bestand twee keer op onder verschillende namen voor dataset 1 <em>en</em> dataset 2 &mdash; om te voorkomen dat de resultaten van de eerste analyse per ongeluk worden overschreven. Importeer nu de tweede dataset en kies voor <code>Don't Save</code> wanneer een waarschuwing verschijnt over het verliezen van wijzigingen. Als alles goed gegaan is hoeft in de plot alleen het fit domein aangepast te worden en de fit opnieuw uitgevoerd om de resultaten voor de tweede dataset te verkrijgen. Sla het project opnieuw<sup id="fnref:save"><a class="footnote-ref" href="#fn:save">2</a></sup> op om de nieuwe data en resultaten voor dataset 2 te bewaren. </p>
+<p>Bestanden:</p>
+<ul>
+<li><a href="data/cart-dataset1.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> cart-dataset1.csv</a></li>
+<li><a href="data/cart-dataset2.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> cart-dataset2.csv</a></li>
+</ul>
+</div>
+<h2 id="extra">Extra</h2>
+<h3 id="fotovoltaische-cel-zonnecel">Fotovoltaïsche cel (zonnecel)</h3>
+<div class="admonition abstract">
+<p class="admonition-title">Leerdoel</p>
+<p>Soms meet je niet direct waarin je geïnteresseerd bent maar moet je de interesante grootheden afleiden uit je metingen. De zonnecel is welbekend, maar gedraagt zich <em>niet</em> als een spanningsbron en <em>ook niet</em> als een stroombron.</p>
+</div>
+<p>In deze opdracht maken we gebruik van metingen die uitgevoerd zijn aan een fotovoltaïsche cel in het kader van onze <a href="https://natuurkundepracticumamsterdam.github.io/ecpc/"><em>Experiment Control with Python Course</em></a>.</p>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht</p>
+<p>Importeer het <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span><code>pvcell.csv</code>-bestand in een leeg project. De kolom $U_0$ is een stuurspanning die gebruikt wordt om de belasting<sup id="fnref:belasting"><a class="footnote-ref" href="#fn:belasting">3</a></sup> van de fotovoltaïsche cel te variëren. Er is geen exacte relatie tussen de waarde van $U_0$ en de waarde van de belastingsweerstand en deze kolom mag je negeren. $U_1$ is de spanning over de fotovoltaïsche cel en $U_2$ is de spanning over een 4.7 Ω weerstand die in serie staat met de belasting. Maak nieuwe <em>calculated columns</em> om de stroomsterkte door het circuit te berekenen en liefst ook de onzekerheid daar op. Plot de relatie tussen de stroomsterkte en de spanning en probeer het volgende model te fitten, afgeleid van de Shockley vergelijking:
+$$
+I = I_\text{L} - I_0\left[\exp\left(\frac{U}{nU_\text{T}}\right) - 1\right],
+$$
+met de stroomsterkte $I$, the fotostroom $I_\text{L}$, de sperverzadigingsstroom $I_0$, de spanning over de fotovoltaïsche cel $U$, en de thermische spanning $U_\text{T} = \frac{kT}{q}$.</p>
+<p>Bestanden:</p>
+<ul>
+<li><a href="data/pvcell.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> pvcell.csv</a></li>
+</ul>
+</div>
+<h3 id="rontgenfluorescentie">Röntgenfluorescentie</h3>
+<div class="admonition abstract">
+<p class="admonition-title">Leerdoel</p>
+<p>In deze oefening zul je zien dat Tailor geen beperkingen heeft op welk model je wilt fitten. Je kunt complexe modellen fitten, zoals bijvoorbeeld <em>multipeak</em>-modellen. Deze vrijheid kent één nadeel: je moet je model heel precies invoeren.</p>
+</div>
+<p>Tailor heeft geen bibliotheek van ingebouwde modellen. Elk model dat je wilt gebruiken zul je zelf expliciet in moeten vullen in het tekstveld. Dit maakt Tailor wel heel flexibel. Waar applicaties als <em>Excel</em> slechts een handjevol modellen kunnen fitten, kunnen meer geavanceerde applicaties als <em>Origin Pro</em> daarnaast ook zogenaamde <em>user-defined</em> modellen gebruiken. Dat onderscheid maakt de gebruikersinterface ingewikkelder. Bovendien kan het gebruik van ingebouwde modellen studenten een beetje lui maken. Ze kiezen model na model tot er iets mooi fit aan de metingen zonder dat ze goed begrijpen welke natuurkunde hier achterzit. Met Tailor moeten studenten zelf nadenken over welke formule ze willen gebruiken als model en deze expliciet invullen.</p>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht</p>
+<p>Het <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span><code>X-ray.csv</code>-bestand bevat metingen van een röntgenfluorescentie-experiment. Importeer het bestand in een leeg project and probeer een piekmodel van jouw keuze aan de metingen te fitten met het doel de energie van de piek te bepalen. Moet je per sé een model gebruiken die helemaal past als je alleen maar in de energie geïnteresseerd bent? Vergeet niet na te denken over de onzekerheid op de metingen. Probeer hetzelfde te doen voor het <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span><code>X-ray-invar.csv</code>-bestand met een <em>multipeak</em>-model.</p>
+<p>Bestanden:</p>
+<ul>
+<li><a href="data/X-ray.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> X-ray.csv</a></li>
+<li><a href="data/X-ray-invar.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> X-ray-invar.csv</a></li>
+</ul>
+</div>
+<h2 id="examenopdracht-2023-i-boomwhackers">Examenopdracht 2023-I: Boomwhackers</h2>
+<div class="admonition abstract">
+<p class="admonition-title">Leerdoel</p>
+<p>Gebruik Tailor om een examenopdracht uit te voeren.</p>
+</div>
+<p>In examenopdrachten wordt data gepresenteerd wat gekoppeld is aan een experiment. Met behulp van Tailor kunnen studenten leren deze data te verwerken. We laten dit zien aan de hand van de <a href="https://www.examenblad.nl/system/files/2023/ex2023/VW-1023-a-23-1-o.pdf">examenopdracht Boomwhackers uit 2023 tijdvak 1</a></p>
+<div class="admonition opdracht">
+<p class="admonition-title">Opdracht</p>
+<h3 id="akoestische-lengte">Akoestische lengte</h3>
+<p>Boomwhackers zijn plastic buizen met aan beide kanten een opening waarmee je muziek kunt maken. Wanneer je een boomwhacker ergens tegenaan tikt, produceert dit geluid door de trillingen (staande golven) in de buis. Hoe lang de buis is, bepaalt welke toonhoogte er klinkt.</p>
+<p>Wanneer de grondtoon en boventonen van een buis worden gemeten, tonen deze kleine afwijkingen ten opzichte van de verwachte resultaten op basis van de buislengte. Dit verschil ontstaat doordat de knopen niet precies samenvallen met de uiteinden van de buis. De afstand tussen de knopen aan beide uiteinden van de buis staat bekend als de akoestische lengte. Deze akoestische lengte is dus bepalend voor de toonhoogte. </p>
+<p>De akoestische lengte wordt gegeven door:
+$$
+L_a = L + 2 \cdot 0.31 \cdot d,
+$$
+met $L_a$ de akoestische lengte van de buis in m, $L$ de werkelijke lengte van de buis in m, $0.31$ een experimenteel bepaalde correctiefactor, $d$ de binnendiameter van de buis in m, $2$ het aantal open uiteinde van de buis. </p>
+<ol>
+<li>Leg uit met behulp van bovenstaande formule of de buiken aan de uiteinden van de buis binnen of buiten de buis vallen.</li>
+</ol>
+<h3 id="golflengte-bepalen">Golflengte bepalen</h3>
+<p>De frequenties van de grondtoon van elke buis en de bijbehorende lengtes van de buizen zijn gegeven in <span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span><code>boomwhackers_2023_1.csv</code>, de binnendiameter van de buizen blijkt na meting 4,0 cm te zijn.</p>
+<ol>
+<li>Importeer het <a href="data/boomwhackers_2023_1.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> boomwhackers_2023_1.csv</a>-bestand in een leeg project.</li>
+<li>Bepaal de golflengte van de grondtoon op basis van de lengte van de buizen en zet deze in een aparte kolom in het Tailor project. </li>
+</ol>
+<h3 id="meetonnauwkeurigheid-toevoegen">Meetonnauwkeurigheid toevoegen</h3>
+<p>De meetonnauwkeurigheid op de frequentie is $2 \cdot 10^1$ Hz. </p>
+<ol>
+<li>Voeg deze meetonnauwkeurigheid als een aparte kolom toe in het Tailor project.</li>
+<li>Maak een afschatting van de meetonnauwkeurigheid op de golflengte en voeg deze toe in het Tailor project.</li>
+</ol>
+<h3 id="frequentie-uitzetten-tegen-de-golflengte">Frequentie uitzetten tegen de golflengte</h3>
+<ol>
+<li>Maak een plot met op de x-as de golflengte en de bijbehorende meetonnauwkeurigheid en op de y-as de frequentie inclusief meetonnauwkeurigheid. </li>
+<li>Geef de assen correcte titels met grootheid en eenheid. Pas het bereik van de plot aan zodat de oorsprong zichtbaar is. </li>
+</ol>
+<h3 id="bepaal-de-geluidsnelheid">Bepaal de geluidsnelheid</h3>
+<p>Met behulp van deze data is het mogelijk om de geluidsnelheid te bepalen. Daarvoor hebben we een model nodig die de data goed beschrijft. </p>
+<ol>
+<li>Met welk model kan de geluidsnelheid bepaald worden uit de plot? Vul in Tailor het model in. Gebruik 'v' als symbool voor de geluidsnelheid in het model. </li>
+<li>Geef onder het kopje <code>Starting values and parameters bounds</code> aan wat redelijke waardes zijn voor de geluidsnelheid. Het linkervakje geeft de ondergrens aan, het middelste vakje is voor de verwachte waarde en het rechtervakje is voor de bovengrens.</li>
+<li>Klik op <code>(Re)Fit model</code> om te zien welke waarde voor de geluidsnelheid het beste bij deze data past. Welke waarde wordt gegeven onder het kopje <code>Fit parameters</code> in het blokje <code>Information</code>?</li>
+</ol>
+<h3 id="lineariseren">Lineariseren</h3>
+<p>Van een rechte fit-lijn is het makkelijker om te zien hoe goed die bij de datapunten past (of niet) dan van een kromme lijn. Daarom willen we het gebruikte model omschrijven naar de vorm:</p>
+<p>$$
+f = \text{iets} \cdot v,
+$$</p>
+<p>met f de frequentie in Hz en v de geluidsnelheid in m/s.</p>
+<ol>
+<li>Wat is $iets$ in ons geval?</li>
+<li>Maak in Tailor een nieuwe kolom en zet de data om zodat je een rechte lijn kunt trekken over de datapunten. </li>
+<li>Maak een nieuwe plot met op de x-as de omgezette data en op de y-as de frequentie. </li>
+<li>Vul het nieuwe model in en klik op <code>Show initial fit</code>.</li>
+<li>Vul voor de startwaarde van de geluidsnelheid een verwachte waarde in. </li>
+<li>Scroll in het vakje voor de startwaarde van de geluidsnelheid om de startwaarde aan te passen. Kijk naar de verandering van de blauwe lijn, wat is de minimale waarde en de maximale waarde die je voor de geluidsnelheid uit deze data kan verwachten?</li>
+</ol>
+<p>Bestanden:</p>
+<ul>
+<li><a href="data/boomwhackers_2023_1.csv"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h160v128c0 17.7 14.3 32 32 32h128v144H176c-35.3 0-64 28.7-64 64v144H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0l128 128zM200 352h16c22.1 0 40 17.9 40 40v8c0 8.8-7.2 16-16 16s-16-7.2-16-16v-8c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8v80c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-8c0-8.8 7.2-16 16-16s16 7.2 16 16v8c0 22.1-17.9 40-40 40h-16c-22.1 0-40-17.9-40-40v-80c0-22.1 17.9-40 40-40zm133.1 0H368c8.8 0 16 7.2 16 16s-7.2 16-16 16h-34.9c-7.2 0-13.1 5.9-13.1 13.1 0 5.2 3 9.9 7.8 12l37.4 16.6c16.3 7.2 26.8 23.4 26.8 41.2 0 24.9-20.2 45.1-45.1 45.1H304c-8.8 0-16-7.2-16-16s7.2-16 16-16h42.9c7.2 0 13.1-5.9 13.1-13.1 0-5.2-3-9.9-7.8-12l-37.4-16.6c-16.3-7.2-26.8-23.4-26.8-41.2 0-24.9 20.2-45.1 45.1-45.1zm98.9 0c8.8 0 16 7.2 16 16v31.6c0 23 5.5 45.6 16 66 10.5-20.3 16-42.9 16-66V368c0-8.8 7.2-16 16-16s16 7.2 16 16v31.6c0 34.7-10.3 68.7-29.6 97.6l-5.1 7.7c-3 4.5-8 7.1-13.3 7.1s-10.3-2.7-13.3-7.1l-5.1-7.7c-19.3-28.9-29.6-62.9-29.6-97.6V368c0-8.8 7.2-16 16-16z"/></svg></span> boomwhackers_2023_1.csv</a></li>
+</ul>
+</div>
+<h2 id="installatie-instructies-voor-tailor">Installatie-instructies voor Tailor</h2>
+<p>Tailor is als repository te vinden op <a href="https://github.com/davidfokkema/tailor">GitHub</a> en de laatste versie kan <a href="https://github.com/davidfokkema/tailor/releases/latest">hier</a> gedownload worden. Links naar de verschillende installatieprogramma's:</p>
+<ul>
+<li><a href="https://github.com/davidfokkema/tailor/releases/download/v1.8.0/Tailor-1.8.0.msi">Windows</a></li>
+<li><a href="https://github.com/davidfokkema/tailor/releases/download/v1.8.0/Tailor-1.8.0_intel.dmg">Intel Macs (oudere Macs)</a></li>
+<li><a href="https://github.com/davidfokkema/tailor/releases/download/v1.8.0/Tailor-1.8.0_apple_silicon.dmg">Apple Silicon (Macs met M1-processor of nieuwer)</a></li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:copied-columns">
+<p>Het is wellicht wat verwarrend, schroom niet om ons om hulp te vragen als het niet meteen duidelijk is.&#160;<a class="footnote-backref" href="#fnref:copied-columns" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:save">
+<p>Gebruik nu <code>Save</code>, in plaats van <code>Save As</code>.&#160;<a class="footnote-backref" href="#fnref:save" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:belasting">
+<p>Wanneer je een apparaat of, in dit geval, een weerstand aansluit op een spanningsbron dan <em>belast</em> je de spanningsbron.&#160;<a class="footnote-backref" href="#fnref:belasting" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.e1c3ead8.min.js"></script>
+      
+        <script src="javascripts/katex.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
