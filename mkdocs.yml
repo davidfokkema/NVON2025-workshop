@@ -1,4 +1,4 @@
-site_name: "Workshop: Focus op data-analyse met Tailor"
+site_name: "Workshop: Data-analyse in de natuurkundeles met Tailor"
 
 theme:
   name: material
@@ -12,6 +12,7 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
   - footnotes
+  - tables
 
 extra_javascript:
   - javascripts/katex.js
@@ -20,3 +21,6 @@ extra_javascript:
 
 extra_css:
   - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+nav:
+  - index.md

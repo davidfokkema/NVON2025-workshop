@@ -3,21 +3,53 @@ hide:
   - navigation
 ---
 
-# Workshop: Focus op data-analyse met Tailor
+# Workshop: Data-analyse in de natuurkundeles met Tailor
 
-Op deze webpagina vind je verschillende opdrachten om metingen te vergelijken met modellen. Hierbij komen verschillende mogelijkheden van Tailor voorbij waarbij we zoveel mogelijk hebben geprobeerd om aan te sluiten bij de onderwijspraktijk van natuurkundepractica. We hebben Tailor overigens ook gebruikt tijdens het begeleiden van profielwerkstukken &mdash; meest recent drie leerlingen die op de VU verschillende metingen gedaan hebben met een Michelsoninterferometer. Tailor kan eenvoudig worden ingezet vanaf het begin van de studie.
+Op deze webpagina vind je verschillende opdrachten om metingen te vergelijken met modellen. Hierbij komen verschillende mogelijkheden van Tailor voorbij waarbij we zoveel mogelijk hebben geprobeerd om aan te sluiten bij de onderwijspraktijk van natuurkundepractica. We hebben Tailor overigens ook gebruikt tijdens het begeleiden van profielwerkstukken &mdash; meest recent drie leerlingen die op de VU verschillende metingen gedaan hebben met een Michelsoninterferometer. Tailor kan worden ingezet vanaf de bovenbouw havo/vwo.
 
 !!! tip
     Als je _Tailor_ nog niet hebt geïnstalleerd volg dan [deze instructies](#installatie-instructies-voor-tailor).
+
+!!! tip
+    De namen van kolommen kun je zelf aanpassen en gebruiken in grafieken en formules. Er zijn wel een paar regels: letters en cijfers zijn toegestaan, maar de naam mag geen spaties bevatten en mag niet _beginnen_ met een cijfer. Een _underscore_ (laag streepje) mag wel, en Tailor zal spaties vervangen door een underscore zodat namen als `lengte_cm` getypt kunnen worden als `lengte<spatie>cm`.
 
 !!! tip "Berekeningen doen met Tailor"
     Eén van de belangrijkste mogelijkheden van Tailor is het werken met _calculated columns_. Het idee is eenvoudig: één wiskundige vergelijking berekent de waardes van de hele kolom. Je kunt de namen van andere kolommen gebruiken als variabelen in je functie. Als je bijvoorbeeld twee kolommen met de grootheden _tijd_ $t$ en _snelheid_ $v$ hebt dan kun je een nieuwe kolom _afstand_ $s$ definiëren met de functie:
     $$
     s = vt.
     $$
-    De notatie die in Tailor gebruikt wordt is dezelfde als in Python. Je zult de vergelijking $vt$ in moeten vullen als: `v * t` en machten als $x^2$ als: `x ** 2`. Let op: alle kolommen worden van links naar rechts doorgerekend. Je kunt dus alleen variabelen gebruiken van kolommen die _eerder_, dus _links_, van je huidige kolom staan. Maar maak je geen zorgen: je kunt de volgorde van kolommen eenvoudig wijzigen door de kolomkoppen naar links of rechts te slepen.
+    De notatie die in Tailor gebruikt wordt is dezelfde als in de programmeertaal Python. Je zult de vergelijking $vt$ in moeten vullen als: `v * t` en machten als $x^2$ als: `x ** 2`. Let op: alle kolommen worden van links naar rechts doorgerekend. Je kunt dus alleen variabelen gebruiken van kolommen die _eerder_, dus _links_, van je huidige kolom staan. Maar maak je geen zorgen: je kunt de volgorde van kolommen eenvoudig wijzigen door de kolomkoppen naar links of rechts te slepen.
 
     Dezelfde notatie gebruik je voor het invoeren van de modelfunctie.
+
+## De valversnelling bepalen aan de hand van een slingerbeweging
+
+!!! abstract "Leerdoel"
+    Als metingen niet overeenkomen met het model, kun je het model aanpassen en opnieuw vergelijken om erachter te komen wat er aan de hand is.
+
+Regelmatig gaat een proefje 'mis'. Het klopt niet, maar waarom? Er is op de verkeerde manier gemeten of er zijn niet genoeg metingen gedaan bijvoorbeeld. Je kunt dan alles opnieuw doen, _of_ je denkt na of je het model kunt aanpassen zodat een vergeten effect wordt meegenomen. Zo gaat dat in de wetenschap: we kunnen metingen niet verklaren, _tenzij_ ...? In dit geval blijkt dat de slingerproef niet helemaal goed ging. We kunnen ontdekken waarom dat was, en komen dan op een antwoord dat, met de gegeven onzekerheid, helemaal zo slecht niet is.
+
+!!! opdracht
+    De bekende Binas-formule voor een slingerbeweging wordt gegeven door
+    $$
+    T = 2\pi\sqrt\frac{l}{g},
+    $$
+    met $T$ de periode van de slingerbeweging, $l$ de lengte van de slinger en $g$ de valversnelling. Verwerk onderstaande metingen en vergelijk met het bovenstaande model:
+
+    | lengte (m) | periode (s) |
+    | ---------- | ----------- |
+    | 0.05       | 0.61        |
+    | 0.1        | 0.715       |
+    | 0.15       | 0.849       |
+    | 0.2        | 0.979       |
+    | 0.25       | 1.107       |
+    | 0.3        | 1.194       |
+    
+    Bonuspunten als je onzekerheden op lengte en tijd toevoegt. Het antwoord klopt niet met de literatuurwaarde van $9.81\,\text{m/s}^2$. Enig idee waarom?
+
+!!! opdracht
+    De metingen zijn uitgevoerd met een cilindervormige massa aan een touwtje. Het blijkt dat de studenten vergeten zijn om voor de lengte het massamiddelpunt van de cilinder te nemen, in plaats van alleen de lengte van het touwtje. Pas het model aan om een 'extra' stukje lengte toe te voegen, waarvan we (helaas) niet meer precies weten hoeveel het was (maar ongeveer een paar centimeter). Wat vind je nu van het resultaat?
+
 
 
 ## De halfwaardetijd van radon-220 bepalen
@@ -185,9 +217,8 @@ In examenopdrachten wordt data gepresenteerd wat gekoppeld is aan een experiment
 
 ## Installatie-instructies voor Tailor
 
-Tailor is als repository te vinden op [GitHub](https://github.com/davidfokkema/tailor) en de laatste versie kan [hier](https://github.com/davidfokkema/tailor/releases/latest) gedownload worden. Links naar de verschillende installatieprogramma's:
+Tailor is als repository te vinden op [GitHub](https://github.com/davidfokkema/tailor) en de laatste versie kan [hier](https://github.com/davidfokkema/tailor/releases/latest) gedownload worden. Voor Windows heb je een `.msi`-bestand nodig, voor macOS een `.dmg`. Directe links naar de verschillende installatieprogramma's:
 
-* [Windows](https://github.com/davidfokkema/tailor/releases/download/v1.8.0/Tailor-1.8.0.msi)
-* [Intel Macs (oudere Macs)](https://github.com/davidfokkema/tailor/releases/download/v1.8.0/Tailor-1.8.0_intel.dmg)
-* [Apple Silicon (Macs met M1-processor of nieuwer)](https://github.com/davidfokkema/tailor/releases/download/v1.8.0/Tailor-1.8.0_apple_silicon.dmg)
+* [Windows](https://github.com/davidfokkema/tailor/releases/download/v2.0.6/Tailor-2.0.6.msi)
+* [macOS (Monterey (2021) of nieuwer)](https://github.com/davidfokkema/tailor/releases/download/v2.0.6/Tailor-2.0.6.dmg)
 
