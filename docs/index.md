@@ -5,7 +5,7 @@ hide:
 
 # Workshop: Data-analyse in de natuurkundeles met Tailor
 
-Op deze webpagina vind je verschillende opdrachten om metingen te vergelijken met modellen. Hierbij komen verschillende mogelijkheden van Tailor voorbij waarbij we zoveel mogelijk hebben geprobeerd om aan te sluiten bij de onderwijspraktijk van natuurkundepractica. We hebben Tailor overigens ook gebruikt tijdens het begeleiden van profielwerkstukken &mdash; meest recent drie leerlingen die op de VU verschillende metingen gedaan hebben met een Michelsoninterferometer. Tailor kan worden ingezet vanaf de bovenbouw havo/vwo.
+Op deze webpagina vind je verschillende opdrachten om metingen te vergelijken met modellen. Hierbij komen verschillende mogelijkheden van Tailor voorbij waarbij we zoveel mogelijk hebben geprobeerd om aan te sluiten bij de onderwijspraktijk van natuurkundepractica. We hebben Tailor overigens ook gebruikt tijdens het begeleiden van profielwerkstukken &mdash; meest recent drie leerlingen die op de VU verschillende metingen gedaan hebben met een Michelsoninterferometer. Tailor kan worden ingezet vanaf de bovenbouw havo/vwo. Als je vragen hebt of meer wilt weten, aarzel dan niet om contact op te nemen met [David Fokkema](mailto:d.b.r.a.fokkema@vu.nl).
 
 !!! tip
     Als je _Tailor_ nog niet hebt geïnstalleerd volg dan [deze instructies](#installatie-instructies-voor-tailor).
